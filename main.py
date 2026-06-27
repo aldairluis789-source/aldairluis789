@@ -2,6 +2,7 @@ import numpy as np
 from tabulate import tabulate
 from models.equilibrium import bubble_point_solver
 from optimizers.pso import pso_lazzus_optimizer
+from models.visualizer import graficar_todo
 
 BOUNDS_NRTL = np.array([[-1000.0, 2500.0], [-1000.0, 2500.0], [0.2, 0.4]])
 BOUNDS_UNIQUAC = np.array([[-1000.0, 2500.0], [-1000.0, 2500.0]])
@@ -74,6 +75,10 @@ def ejecutar_programa():
     print(tabulate(lineas_analisis, headers=headers, tablefmt="fancy_grid", floatfmt=[".3f", ".2f", ".2f", ".3f", ".3f", ".3f", ".4f"]))
     print(f"\n DESVIACIÓN ABSOLUTA MEDIA DE TEMPERATURA  (Delta T) : {delta_T:.4f} °C")
     print(f" DESVIACIÓN ABSOLUTA MEDIA DE FASE VAPOR   (Delta y1): {delta_y:.4f}\n" + "="*85)
+    print(f" DESVIACIÓN ABSOLUTA MEDIA DE FASE VAPOR   (Delta y1): {delta_y:.4f}\n" + "="*85)
+
+    # --- ENLACE CON EL MÓDULO DE SUPERGRÁFICAS ---
+    graficar_todo(x_exp, y_exp, T_exp, P_total, mejores_params, model_type)
 
 def main():
     while True:
