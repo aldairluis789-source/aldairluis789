@@ -359,7 +359,7 @@ with st.expander("💾 MONITOR 05: CUADRO COMPARATIVO EDITORIAL Y REGISTRO DE DE
             <li><b>Institución:</b> Universidad Nacional Mayor de San Marcos</li>
             <li><b>Curso:</b> Proyecto de Ingeniería Química</li>
             <li><b>Evaluadora del Proyecto:</b> Profesora María Verónica Carranza Oropeza</li>
-            <li><b>Desarrolladores del Core Computacional:</b> Aldair Segura, Anai Andrade, Keymi Basilio, Diana Cosme, Zayuri Cusihuaman, Analí Huamani, Cielo Rodríguez.</li>
+            <li><b>Desarrolladores del Core Computacional:</b> Aldair Segura, Anai Andrade, Keymi Basilio, Dayanna Cosme, Zayuri Cusihuaman, Analí Huamani, Cielo Rodríguez.</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
